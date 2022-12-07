@@ -6,12 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.appsflyer.AppsFlyerLib
 import com.google.android.gms.ads.identifier.AdvertisingIdClient
-import com.infinityvector.assolutoraci.AppClass.Companion.C1
-import com.infinityvector.assolutoraci.AppClass.Companion.MAIN_ID
-import com.infinityvector.assolutoraci.AppClass.Companion.appsCheck
 import com.orhanobut.hawk.Hawk
 import com.infinityvector.assolutoraci.databinding.ActivityMainBinding
 import com.infinityvector.assolutoraci.logic.MenuActivity
+import com.infinityvector.assolutoraci.model.Constants.C1
+import com.infinityvector.assolutoraci.model.Constants.MAIN_ID
+import com.infinityvector.assolutoraci.model.Constants.appsCheck
 import com.infinityvector.assolutoraci.viewmodel.MainViewModel
 import kotlinx.coroutines.*
 import java.util.concurrent.Executors
@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
         Hawk.put(MAIN_ID, adIdInfo)
     }
 
+    // lazy
     @OptIn(DelicateCoroutinesApi::class)
     private val job: Job by lazy {
         GlobalScope.launch(Dispatchers.IO) {

@@ -3,10 +3,10 @@ package com.infinityvector.assolutoraci.viewmodel
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.appsflyer.AppsFlyerConversionListener
-import com.infinityvector.assolutoraci.AppClass.Companion.C1
-import com.infinityvector.assolutoraci.AppClass.Companion.appsCheck
-import com.infinityvector.assolutoraci.AppClass.Companion.link
 import com.infinityvector.assolutoraci.api.ApiInterface
+import com.infinityvector.assolutoraci.model.Constants.C1
+import com.infinityvector.assolutoraci.model.Constants.appsCheck
+import com.infinityvector.assolutoraci.model.Constants.link
 import com.orhanobut.hawk.Hawk
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

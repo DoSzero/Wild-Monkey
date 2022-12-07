@@ -1,6 +1,9 @@
 package com.infinityvector.assolutoraci
 
 import android.app.Application
+import com.infinityvector.assolutoraci.model.Constants.instId
+import com.infinityvector.assolutoraci.model.Constants.myID
+
 import com.my.tracker.MyTracker
 import com.onesignal.OneSignal
 import com.orhanobut.hawk.Hawk
@@ -42,13 +45,13 @@ class AppClass : Application() {
     companion object {
         const val strtr = "15005646307634622831"
         const val os = "7ce56680-d209-4012-9f76-d282cc800a11"
-
-        var appsCheck = "appsChecker"
-        var C1: String? = "c11"
-        var myID: String? = "myID"
-        var instId: String? = "instID"
-        var link = "link"
-        var MAIN_ID: String? = ""
+//
+//        var appsCheck = "appsChecker"
+//        var C1: String? = "c11"
+//        var myID: String? = "myID"
+//        var instId: String? = "instID"
+//        var link = "link"
+//        var MAIN_ID: String? = ""
 
     }
 }
